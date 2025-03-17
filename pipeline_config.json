@@ -1,0 +1,43 @@
+{
+    "sf_hbar": 1,
+    "quad_range": [
+        -6,
+        6
+    ],
+    "quad_points": 200,
+    "num_bins": 100,
+    "num_shots": 100,
+    "grid": {
+        "num_db": 20,
+        "num_loss": 20,
+        "num_gamma": 20
+    },
+    "db_range": [
+        10.0,
+        13.0
+    ],
+    "loss_range": [
+        0.8,
+        1.0
+    ],
+    "gamma_range": [
+        0.8,
+        1.0
+    ],
+    "model": {
+        "input_shape": [
+            10
+        ],
+        "loss_bins": 20,
+        "dephasing_bins": 20,
+        "learning_rate": 0.001,
+        "epochs": 1000,
+        "batch_size": 32,
+        "validation_split": 0.2
+    },
+    "save_paths": {
+        "dataset": "dataset.npz",
+        "model": "trained_model.h5",
+        "config": "pipeline_config.json"
+    }
+}
